@@ -1,5 +1,9 @@
 ### Tox Website [![Build Status](https://travis-ci.org/pwnsdx/Tox-Website.svg)](https://travis-ci.org/pwnsdx/Tox-Website)
 
+Attention! Work on this site has been halted in favor of
+https://github.com/Tox/tox.chat. Please direct your development efforts there.
+Thank you.
+
 ![Preview](Resources/preview.png)
 
 The new Tox Website.
@@ -14,7 +18,9 @@ grunt --gruntfile .gruntc.js
 
 ### Contributing
 
-When you contribute changes that will modify look of website, please include screenshot / link to webm that would show changes.
+Attention! Work on this site has been halted in favor of
+https://github.com/Tox/tox.chat. Please direct your development efforts there.
+Thank you.
 
 #### Translations
 
