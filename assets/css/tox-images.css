@@ -1,0 +1,21 @@
+header.toxHeader section div span.logo {
+    background-image:url(../images/Logo.png);
+}
+aside.tObject.downloadNow table tr.headTable td span,
+header.toxHeader section div p a.button span {
+    background:url(../images/Systems.png);
+}
+aside.tObject div.preview {
+    background:url(../images/Windows-Sprite.png) no-repeat center;
+}
+@media screen and (max-width: 1016px) {
+    aside.tObject div.preview {
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 667px) {
+    aside.tObject div.preview {
+        background:url(../images/Antox.png) no-repeat scroll center;
+        background-size: cover;
+    }
+}

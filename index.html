@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<!-- Uncompressed sources are available here: https://github.com/Tox/Tox-Website -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+       
+        <!--[if lte IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- TITLE -->
+        <title>Tox</title>
+
+        <!-- CHARSET -->
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+        <!-- DEVICES -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+        <!-- SEO -->
+        <meta name="description" content="With the rise of government monitoring programs, Tox provides an easy to use application that allows you to connect with friends and family without anyone else listening in. While other big-name services require you to pay for features, Tox is totally free and comes without advertising." />
+        <meta name="keywords" content="tox,messenger,instant messaging,secure,decentralized,friendly,github,open source,free,voice,calling" />
+        
+        <!-- FAVICON -->
+        <link rel="shortcut icon" href="favicon.ico" />
+        
+        <!-- CSS -->
+        <style type="text/css">
+        /* Little Hacks to prevent the page from being displayed until the page loaded */
+        /* The last line of the last CSS file must contain: body { display:block; visibility: visible; } */
+        html { background-color:#000; }
+        body { display:none; visibility: hidden; }
+        </style>
+        <!-- build:css assets/css/build.css -->
+        <link rel="stylesheet" type="text/css" href="assets/vendor/foundation/css/normalize.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/vendor/foundation/css/foundation.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-helper.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-stroke.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/pe-icon-7-filled.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/tox-helper.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="assets/css/tox-homepage.css" media="screen" />
+        <!-- endbuild -->
+        
+        <noscript>
+            <!-- build:css assets/css/build-images.css -->
+            <link type="text/css" href="assets/css/tox-images.css" rel="stylesheet" media="screen" />
+            <!-- endbuild -->
+        </noscript>
+        <script type="text/javascript">
+        window.imagesRevisionsDensity = {
+            1: 'assets/css/tox-images.css',
+            2: 'assets/css/tox-images@2x.css'
+        };
+        </script>
+
+        <link type="text/css" href="//code.cdn.mozilla.net/fonts/fira.css" rel="stylesheet" media="screen" />
+        <!--[if gte IE 9]>
+          <style type="text/css">
+            .gradient {
+               filter: none;
+            }
+          </style>
+        <![endif]-->
+    </head>
+
+    <!-- Metrics -->
+    <script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    mixpanel.init("a3ac548da82ff9d4e02cac76b263c7f2");</script>
+
+    <body onload="mixpanel.track('new_load');">
+        
+        <header class="toxHeader">
+            <section>
+                <nav class="font FiraSans bold">
+                    <ul class="small-centered small-12 medium-8 large-7 columns small-text-center medium-text-right">
+                        <li><a onclick="mixpanel.track('new_wiki');" href="https://wiki.tox.chat/" target="_blank"><span class="pe-7s-global"></span> Wiki</a></li>
+                        <li><a onclick="mixpanel.track('new_toxcore');" href="https://github.com/irungentoo/toxcore" target="_blank"><span class="pe-7s-folder"></span> Code</a></li>
+                        <li><a onclick="mixpanel.track('new_mail');" href="https://lists.tox.chat/" target="_blank"><span class="pe-7s-mail"></span> Mailing lists</a></li>
+                        <li><a onclick="mixpanel.track('new_blog');" href="https://blog.tox.chat/" target="_blank"><span class="pe-7s-news-paper"></span> Blog</a></li>
+                        <!-- li><a onclick="mixpanel.track('new_toxme');" href="https://toxme.se" target="_blank"><span class="pe-7s-id"></span> ToxMe</a></li -->
+                    </ul>
+                </nav>
+                
+                <div>
+                    <span class="logo"></span>
+                    <h1 class="font FiraSans light show-for-large-up">A New Kind of Instant Messaging</h1>
+                    <h1 class="font FiraSans light show-for-medium-only">A New Kind of Instant Messaging</h1>
+                    <h1 class="font FiraSans regular show-for-small-only">A New Kind of Instant Messaging</h1>
+                    
+                    <p class="font FiraSans regular small-centered small-11 medium-11 large-8 columns">With the rise of government monitoring programs, Tox provides an easy to use application that allows you to connect with friends and family without anyone else listening in. While other big-name services require you to pay for features, Tox is totally free and comes without advertising.</p>
+                    
+                    <p class="download small-centered small-10 medium-8 large-6 columns">
+                        <a class="small-centered radius button small font FiraSans extrabold dlbutton" data-anchor="true" onclick=mixpanel.track("new_download"); href="#download">
+                            <span id="download-platform"></span>Download Tox</a>
+                    </p>
+                    
+                    <p class="infos hide small-centered small-10 medium-8 large-6 columns font FiraSans regular">
+                        <a class="font FiraSans bold dlbutton" data-anchor="true" onclick=mixpanel.track("new_download_other"); href="#download">Other clients &amp; platforms</a>
+                    </p>
+                    
+                    <p class="font FiraSans regular note">
+                        Note: Tox is still under heavy development — expect to run into some bugs.
+                    </p>
+                </div>
+                <aside class="footer gradient">
+                    <aside class="small-centered text-center small-10 medium-8 large-7 columns font FiraSans regular">
+                        <a class="pe-7s-angle-down" href=""></a>
+                    </aside>
+                </aside>
+            </section>
+        </header>
+                
+        <aside class="tObject light introduction">
+            <aside class="gradient">
+                <h2 class="font FiraSans regular text-center">Instant messaging, audio calling and much more.</h2>
+                
+                <h3 class="font FiraSans regular text-center">Send messages, files, create groups and make Tox to Tox audio and video calls. Securely.</h3>
+                <div class="disableSelection preview small-centered columns"></div>
+            </aside>
+        </aside>
+        
+        <!--<aside class="tObject dark">
+            <div style="height:500px;"></div>
+        </aside>
+        <aside class="tObject light">
+            <div style="height:500px;"></div>
+        </aside>-->
+        
+        <aside class="tObject dark downloadNow">
+            <h2 class="font FiraSans regular text-center">So, what are you waiting for?</h2>
+            <h3 class="font FiraSans regular text-center">Select your OS and get started!</h3>
+            
+            <table class="font FiraSans bold small-centered small-11 medium-10 large-7 columns">
+              <tr class="font FiraSans extrabold headTable">
+                <td><span class="win"></span></td>
+                <td><span class="win"></span></td>
+                <td><span class="osx"></span></td>
+                <td><span class="droid"></span></td>
+                <td><span class="nux"></span></td>
+              </tr>
+
+              <tr data-client-name="qtox">
+                <td>
+                   <a onclick="mixpanel.track('new_download_win32');" href="https://wiki.tox.chat/binaries#windows">
+                      <span class="pe-7s-cloud-download">
+                         <span class="font FiraSans extrabold">Windows (32bits)</span>
+                      </span>
+                   </a>
+                </td>
+                <td>
+                   <a onclick="mixpanel.track('new_download_win64');" href="https://wiki.tox.chat/binaries#windows">
+                      <span class="pe-7s-cloud-download">
+                         <span class="font FiraSans extrabold">Windows (64bits)</span>
+                      </span>
+                   </a>
+                </td>
+                <td>
+                   <a onclick="mixpanel.track('new_download_osx');" href="https://wiki.tox.chat/binaries#mac_os_x">
+                      <span class="pe-7s-cloud-download">
+                         <span class="font FiraSans extrabold">OS X</span>
+                      </span>
+                   </a>
+                </td>
+                <td>
+                   <a onclick="mixpanel.track('new_download_android');" href="https://wiki.tox.chat/binaries#android_warningexperimental">
+                        <span class="pe-7s-cloud-download">
+                           <span class="font FiraSans extrabold">Android</span>
+                        </span>
+                     </a>
+                </td>
+                <td><a onclick="mixpanel.track('new_download_other');" href="https://wiki.tox.chat/binaries#gnulinux">
+                      <span class="pe-7s-cloud-download">
+                        <span class="font FiraSans extrabold">GNU/Linux</span>
+                      </span>
+                    </a>
+               </td>
+              </tr>
+            </table>
+                
+            <footer class="toxFooter gradient font FiraSans regular text-center">&copy; Copyright 2015 The Tox Project &middot; <a href="https://wiki.tox.chat">Documentation</a> &middot; <a href="https://blog.tox.chat/">Blog</a></footer>
+            
+            <a name="download"></a>
+        </aside>
+        
+        <!-- build:js assets/js/build.js -->
+        <script type="text/javascript" src="assets/vendor/fastclick/lib/fastclick.js"></script>
+        <script type="text/javascript" src="assets/vendor/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="assets/vendor/detectizr/dist/detectizr.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/foundation/js/foundation.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/gsap/src/minified/TweenMax.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/ScrollMagic/scrollmagic/minified/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="assets/vendor/ScrollMagic/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+        <script type="text/javascript" src="assets/js/ScrollToPlugin.js"></script>
+        <script type="text/javascript" src="assets/js/tox.bootstrap.js"></script>
+        <!-- endbuild -->
+        
+        <script type="text/javascript">
+        window.liveSettings = {
+            api_key: "c5875a3dc5c14daf8c9105ad052a304d",
+            picker: "bottom-right",
+            detectlang: true,
+            dynamic: true,
+            autocollect: true,
+            staging: true };
+        </script>
+        <script type="text/javascript" src="//cdn.transifex.com/live.js"></script>
+    </body>
+</html>

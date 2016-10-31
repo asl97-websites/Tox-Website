@@ -1,0 +1,508 @@
+body {
+    color:#d7d1d1;
+    overflow: hidden;
+
+    outline:0;
+    border:0;
+}
+html.no-js body {
+    overflow:auto;
+}
+
+/* HEADER */
+header.toxHeader {
+    width:100%;
+
+    background-color:#000;
+
+    text-shadow: 0px 1px 0px rgba(0,0,0,.6);
+}
+header.toxHeader section {
+    height:100%;
+    width:100%;
+
+    opacity:0;
+    
+    background-image:url(../images/Background.png); /*ImageEmbed:skip*/
+
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+html.no-js header.toxHeader section {
+    opacity:1;
+}
+header.toxHeader section.tween {
+
+}
+
+header.toxHeader section nav {
+    width:100%;
+    position: fixed;
+    margin-left:20%;
+    padding-top:15px;
+    font-size:16px;
+}
+header.toxHeader section nav ul {
+    text-transform: uppercase;
+    list-style-type: none;
+}
+header.toxHeader section nav ul li {
+    display:inline;
+    padding-right: 40px;
+    text-decoration: none;
+}
+header.toxHeader section nav ul li:last-child {
+    padding-right:0;
+}
+header.toxHeader section nav ul li a {
+    color:#d7d1d1;
+}
+header.toxHeader section nav ul li a:hover {
+    color:#fff;
+}
+header.toxHeader section nav ul li a span {
+    vertical-align:middle;
+    margin-right:5px;
+}
+header.toxHeader section div {
+    width:100%;
+    margin:0;
+    padding:0;
+
+    color:#d7d1d1;
+}
+html.no-js header.toxHeader section div {
+    padding-top:60px;
+    padding-bottom:40px;
+}
+html.csstransforms header.toxHeader section div {
+    margin-top:0;
+    margin-bottom:0;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    /*
+    *  Where the magic happens
+    *  Centering method from CSS Tricks
+    *  http://css-tricks.com/centering-percentage-widthheight-elements/
+    */
+    transform: translate(-50%, -50%);
+}
+html.csstransforms header.toxHeader section div.tween {
+    top:80%;
+}
+header.toxHeader section div span.logo {
+    display:block;
+
+    height:99px;
+
+    background-size:81px 99px;
+    background-repeat:no-repeat;
+    background-position:center top;
+
+    opacity:.8;
+}
+header.toxHeader section div b {
+    font-weight:inherit;
+    color:#faf5f5;
+}
+header.toxHeader section div h1 {
+    margin:0;
+    padding:0;
+
+    color:inherit;
+    text-align:center;
+
+    padding-top:10px;
+    padding-bottom:10px;
+
+    font-size:60px;
+}
+header.toxHeader section div h1.show-for-medium-only {
+    font-size:48px;
+}
+header.toxHeader section div h1.show-for-small-only {
+    font-size:36px;
+}
+header.toxHeader section div p {
+    text-align:center;
+    font-size:20px;
+}
+header.toxHeader section div p.infos {
+    font-size:16px;
+}
+header.toxHeader section div p.note {
+    font-size:14px;
+}
+header.toxHeader section div p a {
+    color:#d7d1d1;
+}
+header.toxHeader section div p a.button {
+    margin-bottom:0;
+
+    color:#faf5f5;
+    background-color:#fc605b;
+    font-size:18px;
+
+    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,.2);
+    text-shadow: 0px 1px 0px rgba(0,0,0,.15);
+}
+header.toxHeader section div p a.button:hover {
+    background-color:#d8524e;
+}
+header.toxHeader aside.footer {
+    position:absolute;
+    bottom:0;
+
+    height:80px;
+
+    padding-bottom:0px;
+    width:100%;
+
+    overflow:hidden;
+
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+}
+html.no-js header.toxHeader aside.footer {
+    display:none;
+}
+header.toxHeader aside.footer.tween {
+    height:0px;
+}
+header.toxHeader aside.footer a {
+    font-size:50px;
+    color:#d7d1d1;
+}
+header.toxHeader aside.footer a:hover {
+    color:#fff;
+}
+
+/* CONTENT */
+aside.tObject {
+    min-height:200px;
+    width:100%;
+
+    background-repeat:repeat;
+}
+aside.tObject aside {
+    padding-top:20px;
+}
+aside.tObject h2 {
+    font-size:38px;
+}
+aside.tObject h3 {
+    font-size:26px;
+}
+
+aside.tObject.light {
+    background-image:url(../images/Pattern-Light.png);
+    background-color:#fff;
+
+    text-shadow: 0px 1px 0px #fff;
+}
+aside.tObject.light ::selection {
+    background:#000;
+    color:#fff;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+aside.tObject.light ::-moz-selection {
+    background:#000;
+    color:#fff;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+aside.tObject.light ::-webkit-selection {
+    background:#000;
+    color:#fff;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+aside.tObject.light ::-o-selection {
+    background:#000;
+    color:#fff;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+aside.tObject.light ::-ms-selection {
+    background:#000;
+    color:#fff;
+    -webkit-text-shadow: none;
+    -moz-text-shadow: none;
+    text-shadow: none;
+}
+aside.tObject.light aside {
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(30%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%,rgba(255,255,255,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+}
+aside.tObject.light h2 {
+    color:#fc605b;
+}
+aside.tObject.introduction h2 {    
+    padding-top:30px;
+    padding-bottom:30px;
+}
+aside.tObject.light h3 {
+    color:#3c3b3b;
+}
+
+aside.tObject.dark {
+    background-image:url(../images/Pattern-Dark.png);
+    background-color:#000;
+
+    text-shadow: 0px 1px 0px #000;
+}
+aside.tObject.dark aside {
+
+}
+aside.tObject.dark h2 {
+    color:#fc605b;
+}
+aside.tObject.dark h3 {
+    color:#d7d1d1;
+}
+
+aside.tObject.downloadNow h2 {
+    padding-top:30px;
+    padding-bottom:20px;
+}
+aside.tObject.downloadNow h3 {
+    padding-bottom:25px;
+    font-size:24px;
+}
+aside.tObject.downloadNow table {
+    background:#fff;
+
+    text-shadow: none;
+    
+    border-radius: 5px;
+    border:0;
+}
+aside.tObject.downloadNow table tr {
+    border-bottom:1px solid #e5e5e5;
+
+    height:63px;
+}
+aside.tObject.downloadNow table tr td {
+    width:20%;
+
+    background-color:#fff;
+
+    text-align: center;
+    color:#e5554e;
+
+    font-size:16px;
+
+    border-right: 1px solid #e5e5e5;
+}
+aside.tObject.downloadNow table tr td:first-child {
+    font-size:20px;
+}
+aside.tObject.downloadNow table tr td:last-child {
+    border-right: 0;
+}
+aside.tObject.downloadNow table tr td a {
+    color:#e5554e;
+}
+aside.tObject.downloadNow table tr td a:hover {
+    color:#b23832;
+}
+aside.tObject.downloadNow table tr td span {
+    font-size:18px;
+}
+aside.tObject.downloadNow table tr td span.pe-7s-close-circle {
+    color:#b1b1b1;
+    font-size:22px;
+}
+aside.tObject.downloadNow table tr td input {
+    font-size: 16px;
+    display: block;
+
+    text-align: center;
+    
+    color:#e5554e;
+    
+    cursor: text;
+
+    background:none;
+    box-shadow: none;
+
+    border: 0;
+    outline:0;
+    padding:0;
+    margin:0;
+}
+
+/* HEADER TABLE SPEC */
+aside.tObject.downloadNow table tr.headTable {
+    height:70px;
+
+    background-color:#e5554e;
+
+    border-bottom:1px solid #ce4c46;
+}
+aside.tObject.downloadNow table tr.headTable td {
+    background-color:#e5554e;
+    
+    border-right:1px solid #ce4c46;
+
+    color:#fafbf9;
+
+    text-transform: uppercase;
+
+    font-size:18px;
+    
+    text-shadow: 0px 1px 0px rgba(0,0,0,.15);
+}
+aside.tObject.downloadNow table tr.headTable td p {
+    display:inline;
+    font-size:18px;
+}
+aside.tObject.downloadNow table tr.headTable td:first-child {
+    border-top-left-radius: 5px;
+}
+aside.tObject.downloadNow table tr.headTable td:last-child {
+    border-right: 0;
+    border-top-right-radius: 5px;
+}
+aside.tObject.downloadNow table tr.headTable td span,
+header.toxHeader section div p a.button span {
+    display:inline-block;
+    vertical-align:text-bottom;
+    margin-right:5px;
+}
+
+aside.tObject.downloadNow table tr.headTable td span {
+    height:33px;
+}
+header.toxHeader section div p a.button span {
+    height:24.75px;
+}
+
+aside.tObject.downloadNow table tr.headTable td span.win {
+    width:31px;
+    background-size:115px 33px;
+}
+header.toxHeader section div p a.button span.win {
+    width:24px;
+    background-size:86.25px 24.75px;
+}
+
+aside.tObject.downloadNow table tr.headTable td span.osx {
+    width:26px;
+    background-size:115px 33px;
+    background-position:83px;
+}
+header.toxHeader section div p a.button span.osx {
+    width:19px;
+    background-size:86.25px 24.75px;
+    background-position:63px;
+}
+
+aside.tObject.downloadNow table tr.headTable td span.nux {
+    width:28px;
+    background-size:115px 33px;
+    background-position:58px;
+}
+header.toxHeader section div p a.button span.nux {
+    width:20px;
+    background-size:86.25px 24.75px;
+    background-position:43px;
+}
+
+aside.tObject.downloadNow table tr.headTable td span.droid {
+    width:30px;
+    background-size:115px 33px;
+    background-position:right;
+}
+header.toxHeader section div p a.button span.droid {
+    width:22.1px;
+    background-size:86.25px 24.75px;
+    background-position:right;
+}
+
+aside.tObject div.preview {
+    height:473px;
+    width:996px;
+
+    margin-top:40px;
+    
+    border-top:1px solid #d2d2d2;
+    border-left:1px solid #d2d2d2;
+    border-right:1px solid #d2d2d2;
+
+    box-shadow: 0px 20px 80px -10px rgba(0,0,0,.3);
+    
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+@media screen and (max-width: 1016px) {
+    aside.tObject div.preview {
+        height:294.5px;
+        width:622.5px;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    aside.tObject div.preview {
+        width:360px;
+        height:640px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    aside.tObject div.preview {
+        width:240px;
+        height:426px;
+    }
+}
+
+/* FOOTER */
+footer.toxFooter,
+footer.toxFooter a {
+    color:#727272;
+}
+footer.toxFooter {
+    padding-top:30px;
+    padding-bottom:40px;
+
+    font-size:18px;
+
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-8 */
+}
+footer.toxFooter a:hover {
+    color:#d7d1d1;
+}
+
+/* Little Hacks to prevent the page from being displayed until it has been loaded */
+body { display:block; visibility: visible; }
